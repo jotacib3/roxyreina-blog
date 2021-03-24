@@ -13,15 +13,15 @@
       </div>
 
       <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-          <!-- <li v-for="category in categories" :key="category.id">
+        <ul class="uk-navbar-nav uk-visible@m">
+          <li v-for="category in categories" :key="category.id">
             <nuxt-link
               :to="{ name: 'categories-slug', params: { slug: category.slug } }"
               tag="a"
             >
               {{ category.name }}
             </nuxt-link>
-          </li> -->
+          </li>
         </ul>
       </div>
     </nav>
