@@ -25,7 +25,7 @@ export default {
   },
   async asyncData({ $strapi }) {
     return {
-      articles: await $strapi.find("articles"),
+      articles: await $strapi.find("articles", {  status: 'published' }),
       homepage: await $strapi.find("homepage"),
       global: await $strapi.find("global"),
     };
